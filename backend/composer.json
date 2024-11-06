@@ -1,0 +1,15 @@
+{
+    "name": "egor/backend",
+    "autoload": {
+        "psr-4": {
+            "Egor\\Backend\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Egor Demeshko",
+            "email": "demeshko.egor@gmail.com"
+        }
+    ],
+    "require": {}
+}

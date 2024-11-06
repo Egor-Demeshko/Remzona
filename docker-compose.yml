@@ -1,0 +1,73 @@
+services:
+  server:
+    image: nginx:latest
+    container_name: remzona-nginx  
+    restart: unless-stopped
+    ports: 
+    - 8888:80
+    volumes:
+    - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - backend
+      - frontend
+    networks:
+      - remzona
+
+  backend:
+    build: 
+      context: .
+      dockerfile: ./docker/backend/Dockerfile
+    container_name: remzona-backend
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+    volumes:
+      - ./backend:/app
+      # xdebug config
+      - ./docker/xdebug/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+      - ./docker/xdebug/error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini
+    networks:
+      - remzona
+
+  frontend:
+    build: 
+      context: .
+      dockerfile: ./docker/frontend/Dockerfile
+    container_name: remzona-frontend
+    restart: unless-stopped
+    environment:
+      - PUBLIC_API_ORIGIN=localhost:8888
+      - PUBLIC_API_PROTOCOL=http://
+    volumes:
+      - ./frontend:/app
+    depends_on:
+      - backend
+    networks:
+      - remzona
+
+  mysql:
+    image: mysql
+    container_name: remzona-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: remzona
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1
+    volumes:
+    - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      retries: 3
+      timeout: 6s
+    networks:
+      - remzona
+
+volumes:
+  mysql_data:
+
+networks:
+  remzona:
+    driver: bridge
+
+
