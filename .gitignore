@@ -1,2 +1,5 @@
 .*
 !.gitignore
+!.example.*
+
+backend/vendor

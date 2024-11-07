@@ -47,15 +47,16 @@ services:
       - remzona
 
   mysql:
-    image: mysql
+    image: 'mysql:8.0'
     container_name: remzona-mysql
     restart: unless-stopped
     environment:
-      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: remzona
-      MYSQL_ALLOW_EMPTY_PASSWORD: 1
+      MYSQL_USER: remzona
+      MYSQL_PASSWORD: remzona
     volumes:
-    - mysql_data:/var/lib/mysql
+    - mysql_remzona:/var/lib/mysql
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       retries: 3
@@ -64,7 +65,7 @@ services:
       - remzona
 
 volumes:
-  mysql_data:
+  mysql_remzona:
 
 networks:
   remzona:
