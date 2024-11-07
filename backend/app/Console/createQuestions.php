@@ -5,6 +5,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/../../vendor/autoload.php';
 
 use Egor\Backend\Console\Questions\Start;
+use Egor\Backend\Console\Utils\Registr;
 
 $questions = [
     'heading' => 'По какой причине не удалось забрать заказ?',
@@ -35,8 +36,9 @@ $questions = [
 ];
 
 try {
+    Registr::init();
     (new Start())->run($questions);
-} catch (\Exception $e) {
+} catch (\Exception | \Error $e) {
     echo $e->getMessage();
     exit(1);
 }
