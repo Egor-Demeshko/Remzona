@@ -16,6 +16,7 @@ class Start
     private array $migrationsNames = [
         TopicMigration::class,
         QuestionMigration::class,
+        // OptionMigration::class,
         AnswerMigration::class
     ];
 

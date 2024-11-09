@@ -8,7 +8,7 @@ use Exception;
 
 class TransactionException extends Exception
 {
-    public const DEFAULT_MESSAGE = '[Error]: Database transaction faild!';
+    public const DEFAULT_MESSAGE = '[Error]: Database transaction faild!' . PHP_EOL;
 
     public function __construct(string $message = self::DEFAULT_MESSAGE)
     {

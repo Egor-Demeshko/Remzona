@@ -10,14 +10,16 @@ class Question extends BaseModel
 {
     protected string $table = 'questions';
 
-    protected string $content;
-    protected int $topicId;
+    protected ?string $content;
+    protected ?int $topicId;
     protected ?int $previousId;
 
-    public function __construct(string $content, int $topicId)
+    public function __construct(string $content = null, int $topicId = null)
     {
+        parent::__construct();
         $this->content = $content;
         $this->topicId = $topicId;
+        $this->setTable('questions');
     }
 
     public function get(int $id): void
@@ -44,7 +46,18 @@ class Question extends BaseModel
         ];
 
         $stmt = $this->getBaseInsert($this->table, $data);
-        return $stmt->execute($data);
+        $result = $stmt->execute($data);
+
+        if ($result) {
+            $connection = $this->getConnection();
+            $id = $connection->lastInsertId();
+
+            if ($id) {
+                $this->setId((int) $id);
+            }
+        }
+
+        return $result;
     }
 
     public function update(array $data): void

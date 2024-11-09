@@ -9,6 +9,17 @@ use Egor\Backend\Database\DBConnection;
 abstract class BaseModel extends DBConnection
 {
     protected ?int $id;
+    protected string $table;
+
+    public function setTable(): void
+    {
+        $this->table = $this->table;
+    }
+
+    public function getTable(): string
+    {
+        return $this->table;
+    }
 
     public function getId(): ?int
     {
@@ -21,7 +32,7 @@ abstract class BaseModel extends DBConnection
     }
 
     abstract public function get(int $id): void;
-    abstract public function all(): void;
+    abstract public function all(): array;
     abstract public function insert(): bool;
     // abstract public function update(array $data): void;
     // abstract public function delete(int $id): void;

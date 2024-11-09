@@ -1,2 +1,7 @@
 <?php
-echo "hello from backend";
+
+declare(strict_types=1);
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+(new Egor\Backend\Kernel\App())->run();

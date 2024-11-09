@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Egor\Backend\Console\Utils;
 
 use Egor\Backend\Console\Questions\ParseQuestions;
+use Egor\Backend\Kernel\Http\Request;
 
 class Registr
 {

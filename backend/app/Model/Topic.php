@@ -8,15 +8,15 @@ use Egor\Backend\Model\Abstract\BaseModel;
 
 class Topic extends BaseModel
 {
-    protected string $table = 'topics';
-
-    protected string $heading;
+    protected ?string $heading;
     protected ?int $previousId;
 
     public function __construct(string $heading = null, int $previousId = null)
     {
+        parent::__construct();
         $this->heading = $heading;
         $this->previousId = $previousId;
+        $this->setTable('topics');
     }
 
     public function get(int $id): void
@@ -27,11 +27,16 @@ class Topic extends BaseModel
         // result handling 
     }
 
-    public function all(): void
+    public function all(): array
     {
         $stmt = $this->getBaseAll($this->table);
         $result = $stmt->execute();
-        // TODO
+
+        if ($result) {
+            return $stmt->fetchAll();
+        }
+
+        return [];
     }
 
     public function insert(): bool
