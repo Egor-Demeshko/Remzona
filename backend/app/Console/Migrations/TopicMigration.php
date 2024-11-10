@@ -13,9 +13,7 @@ class TopicMigration extends MigrationUp
         $connection = self::getConnection();
         $connection->exec('CREATE TABLE IF NOT EXISTS topics (
             id INT AUTO_INCREMENT PRIMARY KEY,
-            heading text(255) NOT NULL,
-            previous_topic_id INT,
-            FOREIGN KEY (previous_topic_id) REFERENCES topics(id)
+            heading text(255) NOT NULL
         )');
     }
 }

@@ -9,13 +9,10 @@ use Egor\Backend\Model\Abstract\BaseModel;
 class Topic extends BaseModel
 {
     protected ?string $heading;
-    protected ?int $previousId;
 
-    public function __construct(string $heading = null, int $previousId = null)
+    public function __construct(string $heading = null)
     {
-        parent::__construct();
         $this->heading = $heading;
-        $this->previousId = $previousId;
         $this->setTable('topics');
     }
 
@@ -41,7 +38,7 @@ class Topic extends BaseModel
 
     public function insert(): bool
     {
-        $data = ['heading' => $this->heading, 'previous_topic_id' => $this->previousId];
+        $data = ['heading' => $this->heading];
         $stmt = $this->getBaseInsert($this->table, $data);
         $result = $stmt->execute($data);
 

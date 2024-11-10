@@ -15,7 +15,9 @@ class QuestionMigration extends MigrationUp
             id INT AUTO_INCREMENT PRIMARY KEY,
             content text(255) NOT NULL,
             topic_id INT NOT NULL,
-            FOREIGN KEY (topic_id) REFERENCES topics(id)
+            next_topic_id INT,
+            FOREIGN KEY (topic_id) REFERENCES topics(id),
+            FOREIGN KEY (next_topic_id) REFERENCES topics(id)
         )');
     }
 }

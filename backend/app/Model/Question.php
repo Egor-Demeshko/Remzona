@@ -13,12 +13,13 @@ class Question extends BaseModel
     protected ?string $content;
     protected ?int $topicId;
     protected ?int $previousId;
+    protected ?int $nextTopic;
 
-    public function __construct(string $content = null, int $topicId = null)
+    public function __construct(string $content = null, int $topicId = null, int $nextTopic = null)
     {
-        parent::__construct();
         $this->content = $content;
         $this->topicId = $topicId;
+        $this->nextTopic = $nextTopic;
         $this->setTable('questions');
     }
 
@@ -30,19 +31,21 @@ class Question extends BaseModel
         // result handling 
     }
 
-    public function all(): void
+    public function all(): array
     {
         $stmt = $this->getBaseAll($this->table);
         $result = $stmt->execute();
         // TODO
         // result handling 
+        return [];
     }
 
     public function insert(): bool
     {
         $data = [
             'content' => $this->content,
-            'topic_id' => $this->topicId
+            'topic_id' => $this->topicId,
+            'next_topic_id' => $this->nextTopic
         ];
 
         $stmt = $this->getBaseInsert($this->table, $data);

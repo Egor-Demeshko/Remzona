@@ -11,9 +11,9 @@ abstract class BaseModel extends DBConnection
     protected ?int $id;
     protected string $table;
 
-    public function setTable(): void
+    public function setTable(string $table): void
     {
-        $this->table = $this->table;
+        $this->table = $table;
     }
 
     public function getTable(): string

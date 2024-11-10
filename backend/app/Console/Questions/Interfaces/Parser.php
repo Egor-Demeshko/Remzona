@@ -6,5 +6,5 @@ namespace Egor\Backend\Console\Questions\Interfaces;
 
 interface Parser
 {
-    public function parse(array $data): void;
+    public function parse(array $data): mixed;
 }
