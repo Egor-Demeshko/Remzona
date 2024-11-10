@@ -23,6 +23,30 @@ class Question extends BaseModel
         $this->setTable('questions');
     }
 
+    public static function createFromDB(array $data): self
+    {
+        [
+            'id' => $id,
+            'content' => $content,
+            'topic_id' => $topicId,
+            'next_topic_id' => $nextTopic
+        ] = $data;
+
+        $question = new Question(content: $content, topicId: $topicId, nextTopic: $nextTopic);
+        $question->setId($id);
+        return $question;
+    }
+
+    public function toArray(): array
+    {
+        return [
+            'id' => $this->id,
+            'content' => $this->content,
+            'topic_id' => $this->topicId,
+            'next_topic_id' => $this->nextTopic
+        ];
+    }
+
     public function get(int $id): void
     {
         $stmt = $this->getBaseGet($this->table);

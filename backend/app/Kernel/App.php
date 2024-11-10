@@ -6,6 +6,7 @@ namespace Egor\Backend\Kernel;
 
 use Dotenv\Dotenv;
 use Egor\Backend\Kernel\Events\Events;
+use Egor\Backend\Kernel\Http\Response;
 use Egor\Backend\Kernel\Registr;
 use Egor\Backend\Routes\Router;
 

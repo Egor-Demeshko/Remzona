@@ -14,7 +14,7 @@ abstract class AbstractController
     protected Request $request;
     protected Response $response;
 
-    public function __construct(protected BaseModel $model)
+    public function __construct(protected ?BaseModel $model = null)
     {
         $this->request = Registr::get(Request::class);
         $this->response = Registr::get(Response::class);

@@ -8,7 +8,8 @@ use Exception;
 
 class BadReqeustException extends Exception
 {
-    public function __construct(string $message)
+    public const DEFAULT = 'Bad request.';
+    public function __construct(string $message = self::DEFAULT)
     {
         parent::__construct($message);
     }
