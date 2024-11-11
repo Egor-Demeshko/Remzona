@@ -4,7 +4,7 @@
 
 <style>
 	div {
-		padding: 0.5rem;
+		padding: var(--padding-base);
 	}
 
 	img {

@@ -10,6 +10,6 @@
 	div {
 		display: flex;
 		justify-content: start;
-		padding: 0.5rem;
+		padding: var(--padding-base);
 	}
 </style>

@@ -1,6 +1,11 @@
 <script>
-	import Logo from '$lib/components/Logo.svelte';
 	import QuestionPage from '$lib/components/questions/QuestionPage.svelte';
+	import { setActiveTopicFrom } from '$lib/components/questions/questionState.svelte.js';
+
+	let { data } = $props();
+	const { topics } = data;
+
+	setActiveTopicFrom(topics);
 </script>
 
 <div class="wrapper">

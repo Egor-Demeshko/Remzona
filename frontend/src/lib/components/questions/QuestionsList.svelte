@@ -1,13 +1,12 @@
 <script>
+	import SingleQuestion from './SingleQuestion.svelte';
 	import { activeTopic } from '$lib/components/questions/questionState.svelte.js';
-
-	let { heading, questions } = activeTopic;
 </script>
 
-<div class="question-list"></div>
-
-<style>
-	.question-list {
-		padding: 0.5rem;
-	}
-</style>
+<form>
+	<ul>
+		{#each activeTopic.questions as question}
+			<SingleQuestion {question} />
+		{/each}
+	</ul>
+</form>

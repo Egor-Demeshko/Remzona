@@ -1,8 +1,18 @@
+import { Answer } from './components/questions/scripts/Answer.js';
+
 /**
- * @typedef Question
- * @property {number} id
- * @property {string} content
- * @property {number} topicId
- * @property {number} nextTopicId
-*/
-export const Question = 'Question';
+ * @typedef Topicmap
+ * @property {number} key - Topic id
+ * @property {string} value - The instance of the topic class
+ */
+export const Topicmap = 'Topicmap';
+
+
+/**
+ * @typedef AnswersState
+ * @property {Answer} activeAnswer
+ * @method setActiveAnswer
+ * @method pushTo
+ * @method popFrom
+ */
+export const AnswersState = 'AnswersState';

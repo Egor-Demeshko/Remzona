@@ -1,28 +1,58 @@
-import { ActiveTopic } from './scripts/ActiveTopic';
-import {Answer} from './scripts/Answer';
+import { Topic } from './scripts/Topic.svelte.js';
+import {API_ORIGIN, API_ROUTE, ALL_TOPICS_ROUTE, API_INSIDE_ORIGIN} from '$lib/const';
+import { requestToJson } from '$lib/scripts/requests';
+import { browser } from '$app/environment';
+import { getAnswersState } from '$lib/scripts/answersState.svelte.js';
 
 /**
- * @type {ActiveTopic}
+ * @type {Topic}
  */
-export let activeTopic = $state(new ActiveTopic());
-export let activateButton = $state(false);
+export const activeTopic = new Topic({});
+export const activateButton = $state({active: false});
+
 /**
- * @type {Array<Answer>}
+ * @type {?import('$lib/types').Topicmap}
  */
-const answers = [];
+let topics = null;
+
+const answersState = getAnswersState();
 
 /**
  * 
- * @param {ActiveTopic} topic 
+ * @param {Topic} topic 
  */
 export function setActiveTopic(topic) {
-    activeTopic = topic;
+    activeTopic.setData(topic);
+}
+
+/**
+ * @description - Initial topics load from server
+ */
+export async function getTopics(){
+    const origin = browser ? API_ORIGIN : API_INSIDE_ORIGIN;
+
+    const newTopics = await requestToJson(`${origin}${API_ROUTE}${ALL_TOPICS_ROUTE}`);
+    topics = newTopics ? newTopics : {};
+
+    return topics;
 }
 
 /**
  * 
- * @param {boolean} activate 
+ * @param {{}} topics 
  */
-export function setActivateButton(activate) {
-    activateButton = activate;
+export function setActiveTopicFrom(topics)
+{
+    // @ts-ignore
+    for(const topic of Object.values(topics)){
+        // @ts-ignore
+        setActiveTopic(new Topic(topic));
+        break;
+    }
+}
+
+export function nextQuestion(){
+    // activeAnswer pushTo
+    // calculate nextquestion according to nextQuestionId
+    // setActiveTopic
 }

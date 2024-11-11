@@ -1,9 +1,9 @@
 <script>
-	import QuestionsList from './QuestionsList.svelte';
+	import QuestionsListWrapper from './QuestionsListWrapper.svelte';
 </script>
 
 <section class="questionary">
-	<QuestionsList />
+	<QuestionsListWrapper />
 </section>
 
 <style>
