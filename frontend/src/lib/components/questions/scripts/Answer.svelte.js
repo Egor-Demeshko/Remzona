@@ -6,7 +6,7 @@ export class Answer {
     /**
      * @type {number}
      */
-    questionId;
+    questionId = $state(0);
 
     /**
      * @type {?string}
@@ -41,6 +41,10 @@ export class Answer {
     }
 
     getData(){
-
+        return {
+            question_id: this.questionId,
+            content: this.content,
+            topic_id: this.topicId
+        }
     }
 }

@@ -2,6 +2,16 @@
 
 :root {
 	--padding-base: 0.5rem;
+	--orange: rgba(255, 111, 0, 1);
+	--orange-darker: rgb(182, 79, 0);
+	--grey: rgb(233, 230, 230);
+	--grey-darker: rgb(194, 194, 194);
+
+	/* COLORS */
+	--choice-color: var(--orange);
+	--choice-color-hover: var(--orange-darker);
+	--choice-background: var(--grey);
+	--choice-background-hover: var(--grey-darker);
 }
 
 * * {

@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2024-11-10T18:04:55.560Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="8xbBYJmutB_7x093a9Vz" version="21.6.8" type="device">
+<mxfile host="Electron" modified="2024-11-12T16:33:11.649Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="2-fvqLDri6tG628jYO3u" version="21.6.8" type="device">
   <diagram name="Страница — 1" id="_MIF0AtHXEEVk6wl8C1t">
-    <mxGraphModel dx="3163" dy="2085" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3088" dy="3208" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -78,47 +78,14 @@
         <mxCell id="b6RPNevDdgR6XQa2Lspq-15" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;ENDPOINTS&lt;/font&gt;&lt;/b&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="-530" y="700" width="500" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="b6RPNevDdgR6XQa2Lspq-18" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Questions&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+        <mxCell id="b6RPNevDdgR6XQa2Lspq-18" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;/all&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="-800" y="800" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="b6RPNevDdgR6XQa2Lspq-24" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;GET&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="-800" y="960" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="b6RPNevDdgR6XQa2Lspq-25" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;Topic with questions&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="-520" y="960" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="b6RPNevDdgR6XQa2Lspq-30" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;topic ID&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-650" y="960" width="110" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="b6RPNevDdgR6XQa2Lspq-32" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;PUT&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="-800" y="1060" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="b6RPNevDdgR6XQa2Lspq-33" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;Make statistics&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="-520" y="1060" width="140" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="b6RPNevDdgR6XQa2Lspq-34" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;topic ID&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-660" y="1070" width="110" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="b6RPNevDdgR6XQa2Lspq-35" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;question picked&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-660" y="1090" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="b6RPNevDdgR6XQa2Lspq-36" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;ЧТО ТОЧНО ДОЛЖНО БЫТЬ СДЕЛАНО&lt;/b&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="-1360" y="700" width="500" height="60" as="geometry" />
         </mxCell>
         <mxCell id="b6RPNevDdgR6XQa2Lspq-37" value="в памяти тогда храним текущий topic" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="280" y="20" width="230" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="b6RPNevDdgR6XQa2Lspq-40" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;previous topic ID&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-654" y="990" width="110" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="b6RPNevDdgR6XQa2Lspq-41" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;params&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-650" y="940" width="110" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="b6RPNevDdgR6XQa2Lspq-42" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;body&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-660" y="1050" width="110" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="b6RPNevDdgR6XQa2Lspq-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="b6RPNevDdgR6XQa2Lspq-43" target="b6RPNevDdgR6XQa2Lspq-32" edge="1">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="b6RPNevDdgR6XQa2Lspq-43" value="Submit делает запрос" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="30" y="160" width="230" height="60" as="geometry" />
@@ -132,8 +99,8 @@
         <mxCell id="b6RPNevDdgR6XQa2Lspq-47" value="&lt;span style=&quot;font-size: 26px;&quot;&gt;question должен указывать на след. топик&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1502" y="936" width="576" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="b6RPNevDdgR6XQa2Lspq-50" value="&lt;span style=&quot;font-size: 26px;&quot;&gt;UI SCHEMA&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1060" y="-50" width="620" height="60" as="geometry" />
+        <mxCell id="b6RPNevDdgR6XQa2Lspq-50" value="&lt;span style=&quot;font-size: 26px;&quot;&gt;Question List Resolve&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1013" y="-1200" width="620" height="60" as="geometry" />
         </mxCell>
         <mxCell id="9BFziS6nW6_U3Q4QAMEi-1" value="Answer" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1698" y="620" width="246" height="60" as="geometry" />
@@ -167,9 +134,6 @@
         </mxCell>
         <mxCell id="6KQ4wi4Ub5rU3OURa0qP-3" value="&amp;nbsp; &amp;nbsp; &amp;nbsp;next_topic_id" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1119" y="811" width="242" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="6KQ4wi4Ub5rU3OURa0qP-5" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;GET /first&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
-          <mxGeometry x="-800" y="881" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6KQ4wi4Ub5rU3OURa0qP-6" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;DOMAIN model&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="34" y="1360" width="796" height="60" as="geometry" />
@@ -401,71 +365,180 @@
         <mxCell id="neo2oCf3dafABXA8TqKg-58" value="а возращаем id созданного топика" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1386" y="1394" width="90" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="euNnBs4oGi6VLFRSGXMB-2" value="&lt;span style=&quot;font-size: 26px;&quot;&gt;Задачи&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2181" y="935" width="300" height="60" as="geometry" />
+        <mxCell id="lYkW63FtlJPN8ez16-dN-1" value="answers &lt;b&gt;&amp;lt;СТЕК&amp;gt;&lt;/b&gt;&amp;nbsp;&lt;br&gt;через массив" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="898" y="-1016" width="236" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="euNnBs4oGi6VLFRSGXMB-3" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Сделать правильные миграции&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2181" y="996" width="300" height="40" as="geometry" />
+        <mxCell id="lYkW63FtlJPN8ez16-dN-4" value="OBJECT" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1304" y="-969" width="246" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="euNnBs4oGi6VLFRSGXMB-4" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;question, убедиться в занесении nextTopic&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2181" y="1040" width="300" height="40" as="geometry" />
+        <mxCell id="lYkW63FtlJPN8ez16-dN-6" value="questionId:&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1304" y="-934" width="246" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="euNnBs4oGi6VLFRSGXMB-5" value="&lt;b&gt;Questionary&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1230" y="20" width="250" height="50" as="geometry" />
+        <mxCell id="lYkW63FtlJPN8ez16-dN-7" value="?content:&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1304" y="-889" width="246" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="euNnBs4oGi6VLFRSGXMB-6" value="&lt;b&gt;$state = activeTopic&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1230" y="255" width="250" height="30" as="geometry" />
+        <mxCell id="lYkW63FtlJPN8ez16-dN-8" value="&lt;b&gt;П&lt;/b&gt;ринимает данные и&amp;nbsp;&lt;br&gt;в answers обновляет данные в данных будет id по нему найдем или создадим запись в answer.&lt;br&gt;ТАКЖЕ ОБРАБАТЫВАТЬ НЕГАТИВНЫЕ эффекты" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1314" y="-750" width="246" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="euNnBs4oGi6VLFRSGXMB-7" value="&lt;b&gt;setActiveTopic()&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1230" y="295" width="250" height="30" as="geometry" />
+        <mxCell id="lYkW63FtlJPN8ez16-dN-9" value="topicId" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1304" y="-914" width="246" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="euNnBs4oGi6VLFRSGXMB-8" value="&lt;b&gt;recordAnswer()&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1230" y="335" width="250" height="30" as="geometry" />
+        <mxCell id="lYkW63FtlJPN8ez16-dN-10" value="&lt;b&gt;ВОПРОС. как убрать ответы, если человек возращается.&lt;/b&gt;&lt;br&gt;когда жмем назад, текущий id топика удаляется" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1314" y="-820" width="246" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="euNnBs4oGi6VLFRSGXMB-9" value="&lt;b&gt;answers = []&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1230" y="215" width="250" height="30" as="geometry" />
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="x_a8ZtKoOwNimdtBAikj-12" target="x_a8ZtKoOwNimdtBAikj-37" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="-630" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1180" y="-630" />
+              <mxPoint x="810" y="-630" />
+              <mxPoint x="810" y="-740" />
+              <mxPoint x="762" y="-740" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="euNnBs4oGi6VLFRSGXMB-10" value="&lt;b&gt;sendAnswer()&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1230" y="375" width="250" height="30" as="geometry" />
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-12" value="&lt;span style=&quot;font-size: 26px;&quot;&gt;КНОПКА НАЗАД&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="-480" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="euNnBs4oGi6VLFRSGXMB-15" value="&lt;b&gt;FLOW&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2270" y="-47.5" width="250" height="50" as="geometry" />
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="x_a8ZtKoOwNimdtBAikj-13" target="x_a8ZtKoOwNimdtBAikj-36" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1478" y="-510" />
+              <mxPoint x="1200" y="-510" />
+              <mxPoint x="1200" y="-650" />
+              <mxPoint x="840" y="-650" />
+              <mxPoint x="840" y="-850" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="euNnBs4oGi6VLFRSGXMB-16" value="&lt;b&gt;шелкаем на инпут, разблокируем кнопку&lt;br&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2270" y="192.5" width="250" height="50" as="geometry" />
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-13" value="&lt;span style=&quot;font-size: 26px;&quot;&gt;КНОПКА ВПЕРЕД&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1323" y="-480" width="310" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="euNnBs4oGi6VLFRSGXMB-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="euNnBs4oGi6VLFRSGXMB-17" target="euNnBs4oGi6VLFRSGXMB-25">
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="x_a8ZtKoOwNimdtBAikj-14" target="x_a8ZtKoOwNimdtBAikj-21" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1800" y="-520" />
+              <mxPoint x="1210" y="-520" />
+              <mxPoint x="1210" y="-670" />
+              <mxPoint x="790" y="-670" />
+              <mxPoint x="790" y="-700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-14" value="&lt;span style=&quot;font-size: 26px;&quot;&gt;КНОПКА ФИНИШ&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1645" y="-480" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="x_a8ZtKoOwNimdtBAikj-15" target="x_a8ZtKoOwNimdtBAikj-31" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1610" y="-910" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1150" y="-782" />
+              <mxPoint x="1150" y="-850" />
+              <mxPoint x="1590" y="-850" />
+              <mxPoint x="1590" y="-994" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-15" value="pushTo" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="893" y="-800" width="246" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-16" value="popFrom" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="893" y="-765" width="246" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="x_a8ZtKoOwNimdtBAikj-17" target="lYkW63FtlJPN8ez16-dN-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="euNnBs4oGi6VLFRSGXMB-17" value="&lt;b&gt;$state = activeTopic&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1230" y="84" width="250" height="30" as="geometry" />
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-17" value="&lt;b&gt;Answer&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1610" y="-1051" width="246" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="euNnBs4oGi6VLFRSGXMB-18" value="&lt;b&gt;$state = activeButton(false)&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1230" y="124" width="250" height="30" as="geometry" />
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-21" value="Save (использовать requests)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="526" y="-720" width="246" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="euNnBs4oGi6VLFRSGXMB-19" value="&lt;b&gt;далее, то устанавливаем след. вопрос.&lt;br&gt;и записываем ответ&lt;br&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2270" y="247.5" width="250" height="60" as="geometry" />
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-27" value="answers = []" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="898" y="-949" width="236" height="29" as="geometry" />
         </mxCell>
-        <mxCell id="euNnBs4oGi6VLFRSGXMB-20" value="&lt;b&gt;запросил удаленное АПИ&lt;br&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2270" y="47.5" width="250" height="50" as="geometry" />
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-28" value="setActiveAnswer&lt;br&gt;при клике на кнопку" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="904" y="-840" width="236" height="29" as="geometry" />
         </mxCell>
-        <mxCell id="euNnBs4oGi6VLFRSGXMB-21" value="&lt;b&gt;questions = []&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1550" y="121.5" width="210" height="30" as="geometry" />
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-31" value="getData()" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1615" y="-1009" width="236" height="29" as="geometry" />
         </mxCell>
-        <mxCell id="euNnBs4oGi6VLFRSGXMB-22" value="&lt;b&gt;записываем questions&lt;br&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2270" y="101.5" width="250" height="50" as="geometry" />
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-32" value="setData()" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1615" y="-974" width="236" height="29" as="geometry" />
         </mxCell>
-        <mxCell id="euNnBs4oGi6VLFRSGXMB-23" value="&lt;span style=&quot;font-size: 26px;&quot;&gt;Компоненты&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1805" y="-47.5" width="330" height="60" as="geometry" />
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-33" value="questionState" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="526" y="-1009" width="236" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="euNnBs4oGi6VLFRSGXMB-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="euNnBs4oGi6VLFRSGXMB-24" target="euNnBs4oGi6VLFRSGXMB-25">
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="x_a8ZtKoOwNimdtBAikj-34" target="lYkW63FtlJPN8ez16-dN-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="euNnBs4oGi6VLFRSGXMB-24" value="&lt;span style=&quot;font-size: 26px;&quot;&gt;Questionary&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1810" y="54" width="330" height="60" as="geometry" />
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-34" value="answers" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="526" y="-949" width="236" height="39" as="geometry" />
         </mxCell>
-        <mxCell id="euNnBs4oGi6VLFRSGXMB-25" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Inputs&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="1810" y="151.5" width="330" height="60" as="geometry" />
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="x_a8ZtKoOwNimdtBAikj-36" target="x_a8ZtKoOwNimdtBAikj-15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="-859" />
+              <mxPoint x="850" y="-782" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-36" value="nextQuestion" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="526" y="-869" width="236" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="x_a8ZtKoOwNimdtBAikj-37" target="x_a8ZtKoOwNimdtBAikj-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-37" value="previousQuestion" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="526" y="-770" width="236" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="x_a8ZtKoOwNimdtBAikj-40" value="activeAnswer" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="903" y="-880" width="236" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="O31emMnGofWLCQYScGAu-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="O31emMnGofWLCQYScGAu-1" target="O31emMnGofWLCQYScGAu-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="O31emMnGofWLCQYScGAu-1" value="&lt;span style=&quot;font-size: 26px;&quot;&gt;ПЛАН РАБОТ&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1980" y="-1200" width="410" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="O31emMnGofWLCQYScGAu-2" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;Сделать инпуты&lt;br&gt;Отрисовывать их дизайн&lt;/font&gt;&lt;span style=&quot;font-size: 26px;&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1980" y="-1111" width="410" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="O31emMnGofWLCQYScGAu-4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;проверить чтобы один инпут был выбран из спика&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1980" y="-1041" width="410" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="O31emMnGofWLCQYScGAu-5" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;реализовать сохранение данных выбранной опции в activeAnswer&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1980" y="-965" width="410" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="O31emMnGofWLCQYScGAu-6" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1970" y="-1105.5" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="O31emMnGofWLCQYScGAu-7" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;сделать кнопки переключения вопросов&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1980" y="-896" width="410" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="O31emMnGofWLCQYScGAu-8" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;реализовать кнопку вперед&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1980" y="-820" width="410" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="O31emMnGofWLCQYScGAu-11" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1960" y="-1035.5" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="O31emMnGofWLCQYScGAu-12" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1970" y="-956" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="O31emMnGofWLCQYScGAu-13" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="1971" y="-896" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="O31emMnGofWLCQYScGAu-14" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;реализовать кнопку назад&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1980" y="-750" width="410" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="TkYfPE385uX8AuAAONOy-1" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;пустой инпут дает отправить в стек данные&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1980" y="-670" width="410" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="TkYfPE385uX8AuAAONOy-2" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1971" y="-820" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TkYfPE385uX8AuAAONOy-3" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1970" y="-744.5" width="50" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

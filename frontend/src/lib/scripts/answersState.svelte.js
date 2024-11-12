@@ -1,14 +1,14 @@
-import { Answer } from "$lib/components/questions/scripts/Answer";
-
-export function getAnswersState(){
+import { Answer } from "$lib/components/questions/scripts/Answer.svelte.js";
+function getAnswersState(){
     /**
-     * @type {Array<Answer>}
-     */
-    const answers = [];
+     * @type {Array<{question_id: number, content: ?string, topic_id: number}>}
+    */
+   const answers = [];
+   const activeAnswer = new Answer({});
     
     return {
         // @ts-ignore
-        activeAnswer: $state(new Answer({})),
+        activeAnswer,
         setActiveAnswer,
         pushTo,
         popFrom
@@ -24,13 +24,18 @@ export function getAnswersState(){
 
     /**
      * @this {import('$lib/types').AnswersState}
-     * @param {Answer} answer 
      */
-    function pushTo(answer){
-        answers.push(answer);
+    function pushTo(){
+        answers.push(
+            // deep cloning
+            JSON.parse(
+                JSON.stringify(this.activeAnswer.getData())
+            ));
     }
 
     function popFrom(){
         return answers.pop();
     }
 }
+
+export const answerState = getAnswersState();

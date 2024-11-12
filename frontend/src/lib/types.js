@@ -1,4 +1,4 @@
-import { Answer } from './components/questions/scripts/Answer.js';
+import { Answer } from './components/questions/scripts/Answer.svelte.js';
 
 /**
  * @typedef Topicmap

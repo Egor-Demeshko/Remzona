@@ -6,7 +6,7 @@ export class Topic{
     /** @type {?string} */
     heading = $state(null);
     /** @type {Array<Question>} */
-    questions = $state([]);
+    questions = $state.raw([]);
 
     /**
      * @param {{topic_id?: number, heading?: ?string, questions?: Array<Question>}} value
@@ -14,14 +14,8 @@ export class Topic{
     constructor({topic_id = 0, heading = null, questions = []}){
         this.topic_id = topic_id;
         this.heading = heading;
-
         // @ts-ignore
-        questions = questions.map((singleQuestion) => {
-            // @ts-ignore
-            return new Question({...singleQuestion});
-        });
-
-        this.questions = questions;
+        this.questions = this.formatQuestion(questions);
         
         return Object.seal(this);
     }
@@ -33,6 +27,17 @@ export class Topic{
     setData({topic_id, heading, questions}){
         this.topic_id = topic_id;
         this.heading = heading;
-        this.questions = questions;
+        this.questions = this.formatQuestion(questions);
+    }
+
+    /**
+     * 
+     * @param {Array<?Question>} questions 
+     */
+    formatQuestion(questions){
+        return  questions.map((singleQuestion) => {
+            // @ts-ignore
+            return new Question({...singleQuestion});
+        });
     }
 }

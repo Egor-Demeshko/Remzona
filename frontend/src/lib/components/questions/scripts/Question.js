@@ -28,7 +28,6 @@ export class Question{
         this.content = content;
         this.topicId = topic_id;
         this.nextTopicId = next_topic_id;
-
         return Object.seal(this);
     }
 }
