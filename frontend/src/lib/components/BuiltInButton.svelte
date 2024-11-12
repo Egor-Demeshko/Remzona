@@ -2,14 +2,20 @@
 	import { BUTTONS_TEXTS } from '$lib/const';
 
 	/**
-	 * @type {{type: string, callbackOnClick: any}}
+	 * @type {{type: string, callbackOnClick: any, disabled: boolean}}
 	 */
-	let { type, callbackOnClick } = $props();
+	let { type, callbackOnClick, disabled = false } = $props();
 
 	const text = BUTTONS_TEXTS[type];
+
+	function sendSignal() {
+		if (disabled) return;
+
+		callbackOnClick(type);
+	}
 </script>
 
-<button class="wrapper" onclick={() => callbackOnClick(type)}>{text}</button>
+<button {disabled} class="wrapper" onclick={sendSignal}>{text}</button>
 
 <style>
 	button {
@@ -30,5 +36,11 @@
 	button:hover {
 		color: white;
 		background-color: var(--choice-color-hover);
+	}
+
+	button:disabled {
+		cursor: default;
+		pointer-events: none;
+		opacity: 0.2;
 	}
 </style>

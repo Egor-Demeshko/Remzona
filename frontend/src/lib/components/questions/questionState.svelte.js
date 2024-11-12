@@ -8,7 +8,6 @@ import { answerState } from '$lib/scripts/answersState.svelte.js';
  * @type {Topic}
  */
 export const activeTopic = new Topic({});
-export const activateButton = $state({active: false});
 
 /**
  * @type {?import('$lib/types').Topicmap}
@@ -85,4 +84,8 @@ export function previousQuestion(){
             setActiveTopic(topics[topicId]);
         }
     }
+}
+
+export function getStackSize(){
+    return answersState.getStackSize();
 }

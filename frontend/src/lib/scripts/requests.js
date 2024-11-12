@@ -24,3 +24,26 @@ export async function requestToJson(route)
         console.error($e);
     }
 }
+
+/**
+ * 
+ * @param {string} route 
+ * @param {string} method 
+ * @param {string} data 
+ */
+export async function send(route, method, data)
+{
+    const response = await fetch(route, {
+        method: method,
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    });
+
+    if(response.ok){
+        console.log("DATA SAVED");
+    } else {
+        console.error("DATA NOT SAVED");
+    }
+}

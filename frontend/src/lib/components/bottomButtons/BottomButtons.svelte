@@ -1,10 +1,26 @@
 <script>
-	import { BUTTON_BACKWORD, BUTTON_FORWARD } from '$lib/const';
+	import { BUTTON_BACKWORD, BUTTON_FORWARD, BUTTON_FINISH } from '$lib/const';
 	import BuiltInButton from '../BuiltInButton.svelte';
 	import {
+		activeTopic,
 		nextQuestion,
-		previousQuestion
+		previousQuestion,
+		getStackSize
 	} from '$lib/components/questions/questionState.svelte.js';
+	import { answerState } from '$lib/scripts/answersState.svelte';
+
+	let backwordDisabled = $derived(activeTopic.topic_id && getStackSize() === 0 ? true : false);
+
+	let forwardDisabled = $derived(
+		activeTopic.topic_id && answerState.activeAnswer.nextTopicId ? false : true
+	);
+
+	let finish = $derived(
+		answerState.activeAnswer.questionId === 0 ||
+			(answerState.activeAnswer.questionId && answerState.activeAnswer.nextTopicId)
+			? false
+			: true
+	);
 
 	/**
 	 * @param {string} value
@@ -19,12 +35,20 @@
 </script>
 
 <div class="buttons_row">
-	<div class="flex-1">
-		<BuiltInButton type={BUTTON_BACKWORD} {callbackOnClick} />
-	</div>
-	<div class="flex-1">
-		<BuiltInButton type={BUTTON_FORWARD} {callbackOnClick} />
-	</div>
+	{#if finish}
+		<BuiltInButton
+			type={BUTTON_FINISH}
+			disabled={false}
+			callbackOnClick={() => answerState.saveAnswers()}
+		/>
+	{:else}
+		<div class="flex-1">
+			<BuiltInButton type={BUTTON_BACKWORD} {callbackOnClick} disabled={backwordDisabled} />
+		</div>
+		<div class="flex-1">
+			<BuiltInButton type={BUTTON_FORWARD} {callbackOnClick} disabled={forwardDisabled} />
+		</div>
+	{/if}
 </div>
 
 <style>

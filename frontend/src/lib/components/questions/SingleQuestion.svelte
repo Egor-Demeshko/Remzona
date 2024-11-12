@@ -41,7 +41,8 @@
 			new Answer({
 				question_id: id,
 				answer: content === FREE_INPUT ? answer : content,
-				topic_id: topicId
+				topic_id: topicId,
+				next_topic_id: nextTopicId
 			})
 		);
 	}

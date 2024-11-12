@@ -1,7 +1,10 @@
 import { Answer } from "$lib/components/questions/scripts/Answer.svelte.js";
+import { API_ORIGIN, API_ROUTE, SAVE_ANSWERS } from "$lib/const";
+import {send} from "$lib/scripts/requests";
+
 function getAnswersState(){
     /**
-     * @type {Array<{question_id: number, content: ?string, topic_id: number}>}
+     * @type {Array<{question_id: number, content: ?string, topic_id: number, next_topic_id: ?number}>}
     */
    const answers = [];
    const activeAnswer = new Answer({});
@@ -11,7 +14,9 @@ function getAnswersState(){
         activeAnswer,
         setActiveAnswer,
         pushTo,
-        popFrom
+        popFrom,
+        getStackSize,
+        saveAnswers
     }
 
     /**
@@ -35,6 +40,19 @@ function getAnswersState(){
 
     function popFrom(){
         return answers.pop();
+    }
+
+    function getStackSize(){
+        return answers.length;
+    }
+
+    function saveAnswers(){
+        this.pushTo();
+        send(
+            API_ORIGIN + API_ROUTE + SAVE_ANSWERS,
+            'POST',
+            JSON.stringify(answers)
+        );
     }
 }
 

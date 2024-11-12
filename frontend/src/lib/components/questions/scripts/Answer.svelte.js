@@ -18,15 +18,20 @@ export class Answer {
      */
     topicId;
 
+    /**
+     * @type {?number}
+     */
+    nextTopicId = $state(0);
+
     /** 
      * 
-     * @param {{question_id: number, answer: ?string, topic_id: number}} value
+     * @param {{question_id: number, answer: ?string, topic_id: number, next_topic_id: ?number}} value
     */
-    constructor({question_id = 0, answer = null, topic_id = 0}){
+    constructor({question_id = 0, answer = null, topic_id = 0, next_topic_id = null}){
         this.questionId = question_id;
         this.content = answer;
         this.topicId = topic_id;
-
+        this.nextTopicId = next_topic_id;
         return Object.seal(this);
     }
 
@@ -38,13 +43,15 @@ export class Answer {
         this.questionId = answer.questionId;
         this.content = answer.content;
         this.topicId = answer.topicId;
+        this.nextTopicId = answer.nextTopicId;
     }
 
     getData(){
         return {
             question_id: this.questionId,
             content: this.content,
-            topic_id: this.topicId
+            topic_id: this.topicId,
+            next_topic_id: this.nextTopicId
         }
     }
 }
