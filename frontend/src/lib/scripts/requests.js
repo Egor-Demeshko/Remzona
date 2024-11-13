@@ -1,4 +1,4 @@
-
+import {notificationsState} from '$lib/components/notifications/notificationsState.svelte.js';
 /**
  * 
  * @param {string} route 
@@ -33,6 +33,7 @@ export async function requestToJson(route)
  */
 export async function send(route, method, data)
 {
+    let result = false;
     const response = await fetch(route, {
         method: method,
         headers: {
@@ -42,8 +43,12 @@ export async function send(route, method, data)
     });
 
     if(response.ok){
+        notificationsState.addNotification("Data was successfully saved");
         console.log("DATA SAVED");
+        result = await response.json();
     } else {
         console.error("DATA NOT SAVED");
     }
+
+    return result;
 }

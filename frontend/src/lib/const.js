@@ -7,6 +7,8 @@ export const FREE_INPUT = '<free>';
 export const BUTTON_BACKWORD = 'BUTTON_BACKWORD';
 export const BUTTON_FORWARD = 'BUTTON_FORWARD';
 export const BUTTON_FINISH = 'BUTTON_FINISH';
+export const NOTIFICATION_OK = 'notification_ok';
+export const NOTIFICATION_ERROR = 'notification_error';
 
 /**
  * @type {Object<string, string>}

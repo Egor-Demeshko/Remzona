@@ -1,3 +1,4 @@
+import { getTopics, setActiveTopicFrom } from "$lib/components/questions/questionState.svelte";
 import { Answer } from "$lib/components/questions/scripts/Answer.svelte.js";
 import { API_ORIGIN, API_ROUTE, SAVE_ANSWERS } from "$lib/const";
 import {send} from "$lib/scripts/requests";
@@ -8,6 +9,7 @@ function getAnswersState(){
     */
    const answers = [];
    const activeAnswer = new Answer({});
+   var sendAttempts = 0;
     
     return {
         // @ts-ignore
@@ -16,7 +18,8 @@ function getAnswersState(){
         pushTo,
         popFrom,
         getStackSize,
-        saveAnswers
+        saveAnswers,
+        reset
     }
 
     /**
@@ -46,13 +49,30 @@ function getAnswersState(){
         return answers.length;
     }
 
-    function saveAnswers(){
-        this.pushTo();
-        send(
+    async function reset(){
+        sendAttempts = 0;
+        activeAnswer.setData(new Answer({}));
+        answers.length = 0;
+
+        let topics = await getTopics();
+        setActiveTopicFrom(topics);
+    }
+
+    async function saveAnswers(){
+        if(sendAttempts === 0){
+            this.pushTo();
+        }
+
+        sendAttempts++;
+        let result = await send(
             API_ORIGIN + API_ROUTE + SAVE_ANSWERS,
             'POST',
             JSON.stringify(answers)
         );
+
+        if(result){
+            this.reset();
+        }
     }
 }
 

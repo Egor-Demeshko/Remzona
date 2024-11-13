@@ -16,3 +16,11 @@ export const Topicmap = 'Topicmap';
  * @method popFrom
  */
 export const AnswersState = 'AnswersState';
+
+/**
+ * @typedef Notification
+ * @property {string} message
+ * @property {string} type
+ * @property {number} timestamp
+ */
+export const Notification = 'Notification';

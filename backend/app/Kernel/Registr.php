@@ -7,6 +7,7 @@ namespace Egor\Backend\Kernel;
 use Egor\Backend\Kernel\Events\Events;
 use Egor\Backend\Kernel\Http\Request;
 use Egor\Backend\Kernel\Http\Response;
+use Egor\Backend\Repository\AnswerRepository;
 use Egor\Backend\Routes\Router;
 
 class Registr

@@ -1,5 +1,6 @@
 <script>
 	import BottomButtons from '$lib/components/bottomButtons/BottomButtons.svelte';
+	import Notifications from '$lib/components/notifications/Notifications.svelte';
 	import QuestionPage from '$lib/components/questions/QuestionPage.svelte';
 	import { setActiveTopicFrom } from '$lib/components/questions/questionState.svelte.js';
 
@@ -17,12 +18,23 @@
 			<BottomButtons />
 		</div>
 	</div>
+
+	<div class="notifications__position">
+		<Notifications />
+	</div>
 </div>
 
 <style>
 	.container {
 		margin: 0 auto;
 		max-width: 960px;
+	}
+
+	.notifications__position {
+		position: absolute;
+		bottom: 2rem;
+		right: 2rem;
+		z-index: 10;
 	}
 
 	.bottom_position {

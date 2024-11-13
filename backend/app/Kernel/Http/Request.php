@@ -18,7 +18,13 @@ class Request
         $this->route = $_SERVER['REQUEST_URI'];
         $this->params = $params ?? $_GET;
         $this->query = $query ?? $_POST;
-        $this->body = file_get_contents('php://input') ?? '';
+
+        $body = stream_get_contents(
+            fopen('php://input', 'r')
+        );
+        $body = trim($body, '"');
+
+        $this->body = stripslashes($body);
     }
 
     public function getMethod(): string
@@ -29,5 +35,10 @@ class Request
     public function getUri(): string
     {
         return $this->route;
+    }
+
+    public function decodeBody(): array
+    {
+        return json_decode($this->body, true);
     }
 }

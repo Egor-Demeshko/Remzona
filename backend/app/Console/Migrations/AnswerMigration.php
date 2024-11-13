@@ -13,9 +13,11 @@ class AnswerMigration extends MigrationUp
         $connection = self::getConnection();
         $connection->exec('CREATE TABLE IF NOT EXISTS answers (
             id INT AUTO_INCREMENT PRIMARY KEY,
-            answer_content text(255),
+            content text(255),
             question_id INT NOT NULL,
-            FOREIGN KEY (question_id) REFERENCES questions(id)
+            topic_id INT NOT NULL,
+            FOREIGN KEY (question_id) REFERENCES questions(id),
+            FOREIGN KEY (topic_id) REFERENCES topics(id)
         )');
     }
 }

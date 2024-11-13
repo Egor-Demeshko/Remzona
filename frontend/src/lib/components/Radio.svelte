@@ -1,5 +1,7 @@
 <script>
 	import { answerState } from '$lib/scripts/answersState.svelte.js';
+	import { scale } from 'svelte/transition';
+
 	/**
 	 * @type {{id:number, topicId:number, nextTopicId:number, onUpdate:Function}}
 	 */
@@ -49,7 +51,7 @@
 >
 	<input type="radio" checked={inputChecked} tabindex="-1" name="question-option" />
 	{#if inputChecked}
-		<div class="checkmark"></div>
+		<div class="checkmark" transition:scale={{ duration: 200 }}></div>
 	{/if}
 </div>
 
@@ -91,5 +93,10 @@
 		height: 0.625rem;
 		background-color: var(--choice-color);
 		border-radius: 50%;
+		transition: background 0.4s ease;
+	}
+
+	.wrapper:hover .checkmark {
+		background-color: var(--choice-color-hover);
 	}
 </style>
