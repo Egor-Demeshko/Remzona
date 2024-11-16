@@ -9,6 +9,8 @@ use Egor\Backend\Kernel\Exceptions\BadReqeustException;
 use Egor\Backend\Model\Question;
 use Egor\Backend\Model\Topic;
 use Egor\Backend\Repository\WholeSetRepository;
+use Slim\Psr7\Request;
+use Slim\Psr7\Response;
 
 class TopicAndQuestion extends AbstractController
 {
@@ -27,7 +29,7 @@ class TopicAndQuestion extends AbstractController
         );
     }
 
-    public function index(): void
+    public function index(Request $request, Response $response): Response
     {
         $set = $this->setRepository->getSet();
 
@@ -35,6 +37,9 @@ class TopicAndQuestion extends AbstractController
             throw new BadReqeustException();
         }
 
-        $this->response->json($set);
+        $response->withStatus(200);
+        $response->withHeader('Content-Type', 'application/json');
+        $response->getBody()->write(json_encode($set));
+        return $response;
     }
 }

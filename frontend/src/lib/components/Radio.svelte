@@ -18,7 +18,6 @@
 	 */
 	function clicked(e) {
 		// @ts-ignore
-
 		if (e.target.closest('.wrapper') !== wrapper) return;
 
 		if (answerState.activeAnswer.questionId !== id) {
